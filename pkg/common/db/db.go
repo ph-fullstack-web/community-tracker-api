@@ -9,7 +9,7 @@ import (
 )
 
 func Init() *gorm.DB {
-	db, err := gorm.Open(postgres.Open("host=localhost port=5432 user=vincentdizon dbname=mydb sslmode=disable"), &gorm.Config{})
+	db, err := gorm.Open(postgres.Open("host=localhost port=5432 user=postgres dbname=CommunityTracker sslmode=disable password=password"), &gorm.Config{})
 
 	if err != nil {
 		log.Fatalln(err)
