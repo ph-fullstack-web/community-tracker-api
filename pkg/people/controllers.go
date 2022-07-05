@@ -16,6 +16,7 @@ func RegisterRoutes(app *fiber.App, db *gorm.DB) {
 	peopleRoutes := app.Group("/api/people")
 	peopleRoutes.Get("/", h.GetPeople)
 	peopleRoutes.Get("/:people_id", h.GetPeopleById)
+	peopleRoutes.Post("/skills", h.GetPeopleBySkills);
 	peopleRoutes.Post("/", h.AddPeople)
 	peopleRoutes.Put("/:peopleid", h.UpdatePeople)
 
