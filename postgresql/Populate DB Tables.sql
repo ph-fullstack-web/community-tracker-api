@@ -81,7 +81,7 @@ INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullnam
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Natividad','Aura','','Aura Natividad','auracedes.natividad@softvision.com','2021-06-01',7,7,8,7,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Vergara','Christian','','Christian Vergara','christianpaul.vergara@softvision.com','2017-11-01',7,7,9,6,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Macatangay','Eldrich','','Eldrich Macatangay','eldrich.macatangay@softvision.com','2017-08-29',7,7,8,6,TRUE,FALSE);
-INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Dela Peña','Hanami','','Hanami Dela Peña','hanamiann.delapena@softvision.com','2021-05-01',7,7,8,3,TRUE,FALSE);
+INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Dela Peï¿½a','Hanami','','Hanami Dela Peï¿½a','hanamiann.delapena@softvision.com','2021-05-01',7,7,8,3,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Tandang','Jan Aldrich','','Jan Aldrich Tandang','janaldrich.tandang@softvision.com','2021-09-12',7,7,8,1,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Vallejos','Jayhar','','Jayhar Vallejos','jayhar.vallejos@softvision.com','2019-12-17',7,7,8,6,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Silvestre','Jerome','','Jerome Silvestre','jerome.silvestre@softvision.com','2021-04-11',7,7,8,2,TRUE,FALSE);
@@ -91,10 +91,10 @@ INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullnam
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Gloria','Josha','','Josha Gloria','joshuamiguel.gloria@softvision.com','2019-07-11',7,7,9,4,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Boado','Justin','','Justin Boado','justinbernard.boado@softvision.com','2017-06-28',7,7,8,4,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Cautiverio','Loyd','','Loyd Cautiverio','loydzedric.cautiverio@softvision.com','2017-06-07',7,7,8,6,TRUE,FALSE);
-INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Peñano','Marc','','Marc Peñano','marcdominic.penano@softvision.com','2021-04-25',7,7,8,7,TRUE,FALSE);
+INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Peï¿½ano','Marc','','Marc Peï¿½ano','marcdominic.penano@softvision.com','2021-04-25',7,7,8,7,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Obog','Mario','','Mario Obog','marionino.obog@softvision.com','2020-04-07',7,7,9,3,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Abrazado','Nikko','','Nikko Abrazado','nikkopaulo.abrazado@softvision.com','2017-10-27',7,7,8,3,TRUE,FALSE);
-INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Cayetano','Niño','','Niño Cayetano','ninobenedict.cayetano@softvision.com','2017-03-10',7,7,9,3,TRUE,FALSE);
+INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Cayetano','Niï¿½o','','Niï¿½o Cayetano','ninobenedict.cayetano@softvision.com','2017-03-10',7,7,9,3,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Daza','Olive','','Olive Daza','olive.daza@softvision.com','2017-09-15',7,7,8,6,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Eliseo','Pauline','','Pauline Eliseo','paulinejoena.eliseo@softvision.com','2019-02-20',7,7,8,7,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Maquinto','Jan Philipp','','Jan Philipp Maquinto','janphilipp.maquinto@softvision.com','2018-09-25',7,7,8,4,TRUE,FALSE);
@@ -133,7 +133,7 @@ INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullnam
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Villaflor','Mac Mac','','Mac Mac Villaflor','markjoseph.villaflor@softvision.com','2017-09-27',8,7,9,4,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Sarmiento','Michael','','Michael Sarmiento','michael.sarmiento@softvision.com','2019-05-18',8,7,8,1,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Mosca','Neil','','Neil Mosca','neilnicoli.mosca@softvision.com','2021-02-05',8,7,9,3,TRUE,FALSE);
-INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Muñoz','Rica','','Rica Muñoz','rica.munoz@softvision.com','2020-01-04',8,7,8,6,TRUE,FALSE);
+INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Muï¿½oz','Rica','','Rica Muï¿½oz','rica.munoz@softvision.com','2020-01-04',8,7,8,6,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Ulep','Robert','','Robert Ulep','robert.ulep@softvision.com','2020-09-20',8,7,8,3,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Roman','Tobby','','Tobby Roman','tobyrodin.roman@softvision.com','2019-08-23',8,7,8,4,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Clemente','Faye','','Faye Clemente','cecilfaye.clemente@softvision.com','2020-09-12',8,7,9,2,TRUE,FALSE);
@@ -159,7 +159,7 @@ INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullnam
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Zabala','Zackary','','Zackary Zabala','zackary.zabala@softvision.com','2019-07-17',4,7,8,7,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (2107746,'Macapagal','Aaron','','Aaron Macapagal','aaron.macapagal@softvision.com','2021-04-08',1,7,7,3,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (933608,'Carandang Jr','Alberto','','Alberto Carandang Jr','alberto.carandang@softvision.com','2018-09-16',1,7,7,1,TRUE,FALSE);
-INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Salaño','Alfie','','Alfie Salaño','alfie.salano@softvision.com','2018-11-13',1,7,9,5,TRUE,FALSE);
+INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Salaï¿½o','Alfie','','Alfie Salaï¿½o','alfie.salano@softvision.com','2018-11-13',1,7,9,5,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (2025237,'Pajaret','Alfredo James','','Alfredo James Pajaret','alfredojames.pajaret@softvision.com','2020-08-06',1,7,8,4,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Cadiz','Aljon Rey','','Aljon Rey Cadiz','aljonrey.cadiz@softvision.com','2019-10-01',1,7,8,7,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (933889,'Tolentino','Allan','','Allan Tolentino','allanjay.tolentino@softvision.com','2018-12-13',1,7,7,2,TRUE,FALSE);
@@ -197,7 +197,7 @@ INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullnam
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (933788,'Edwin','Moncayo','','Moncayo Edwin','edwin.moncayo@softvision.com','2020-03-06',1,7,6,7,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (2107749,'Torres','Emmanuel Andrew','','Emmanuel Andrew Torres','emmanuelandrew.t@softvision.com','2018-08-22',1,7,9,3,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (933607,'Caraan','Eric','','Eric Caraan','eric.caraan@softvision.com','2017-05-03',1,7,6,2,TRUE,FALSE);
-INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (933609,'Cariño','Erich','','Erich Cariño','erich.carino@softvision.com','2018-01-15',1,7,8,6,TRUE,FALSE);
+INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (933609,'Cariï¿½o','Erich','','Erich Cariï¿½o','erich.carino@softvision.com','2018-01-15',1,7,8,6,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Emmanuel','Erin','','Erin Emmanuel','erinemmanuel.paca@softvision.com','2017-09-19',1,7,7,5,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (2148851,'Lirazan','Erwin','','Erwin Lirazan','erwinlirazan.daza@softvision.com','2019-03-11',1,7,9,4,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (933839,'Reyes III','Rex','','Rex Reyes III','exequiel.reyes@softvision.com','2019-02-05',1,7,8,7,TRUE,FALSE);
@@ -206,7 +206,7 @@ INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullnam
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (933882,'Tacata','Francis','','Francis Tacata','francisantonio.tacata@softvision.com','2018-11-29',1,7,6,5,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (933863,'Sandico','Bullet','','Bullet Sandico','francisbullet.sandico@softvision.com','2017-05-28',1,7,6,6,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Ala','Francis','','Francis Ala','francisjoegennee.ala@softvision.com','2018-12-16',1,7,9,3,TRUE,FALSE);
-INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (2115929,'Compañado','Franklin','','Franklin Compañado','franklin.companado@softvision.com','2021-05-10',1,7,9,3,TRUE,FALSE);
+INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (2115929,'Compaï¿½ado','Franklin','','Franklin Compaï¿½ado','franklin.companado@softvision.com','2021-05-10',1,7,9,3,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (933599,'Calica','Gabriel Angelo','','Gabriel Angelo Calica','gabrielangelo.calica@softvision.com','2020-09-08',1,7,9,7,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (933620,'Ceredon','Gen','','Gen Ceredon','gennesisjoy.ceredon@softvision.com','2018-01-07',1,7,8,6,TRUE,FALSE);
 INSERT INTO public.people (cognizantid, lastname, firstname, middlename, fullname, csvemail, hireddate, communityid, workstateid, joblevelid, projectid, isactive, isprobationary) VALUES (0,'Gono','Gerald','','Gerald Gono','gerald.gono@softvision.com','2019-09-03',1,7,7,3,TRUE,FALSE);
@@ -381,7 +381,7 @@ INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('ElasticSearch
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('EmberJS', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Entity Framework Core', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Espresso', true);
-INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('ETL: Glue', true);
+INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('ETL:ï¿½Glue', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Express.JS', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('F#', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('GCP', true);
@@ -392,7 +392,7 @@ INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Google Cloud 
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('groovy', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Jasmine', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('java', true);
-INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Java 8 and 11 ', true);
+INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Java 8 and 11ï¿½', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('JavaScript', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Jenkins', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Jest', true);
@@ -402,7 +402,7 @@ INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('js', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('JUnit', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('JUnit+B66', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Kafka 2 and AWS SQS', true);
-INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Kafka 2 and AWS SQS – messaging ', true);
+INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Kafka 2 and AWS SQSï¿½ï¿½ messagingï¿½', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Kanban', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Kinesis', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Koa.JS', true);
@@ -417,20 +417,20 @@ INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Mocha', true)
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('MongoDB', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('MySQL', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Native: in-house libraries', true);
-INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Nest.JS – most used Node.JS frameworks', true);
+INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Nest.JSï¿½ï¿½ most used Node.JS frameworks', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Network: Axios', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Next.js', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('NgRX', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('NHibernate', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('NUnit', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Oracle', true);
-INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Oracle  ', true);
-INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Perl – our “spoken” languages', true);
+INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Oracleï¿½ï¿½', true);
+INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Perlï¿½ï¿½ our ï¿½spokenï¿½ languages', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('PHP', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('PHPUnit', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('PostgreSQL', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('PowerBI', true);
-INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Puppeteer ', true);
+INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Puppeteerï¿½', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('PySpark', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('PyTest', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Python', true);
@@ -455,7 +455,7 @@ INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Scrum', true)
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Scrumban', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Snowflake (the tool', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Spock', true);
-INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Spring 5 – core platform ', true);
+INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Spring 5ï¿½ï¿½ core platformï¿½', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('SQL Server', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Storybook', true);
 INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('swift', true);
@@ -488,6 +488,12 @@ INSERT INTO public.peopleskills(peopleskillsdesc, isactive)VALUES('Zephyr', true
 
 
 -- INSERT INTO peopletechnicalinterest (TODO)
-
+INSERT INTO public.peopleprimaryskills (peopleid, peopleskillsid, isactive)VALUES(1, 1, true);
+INSERT INTO public.peopleprimaryskills (peopleid, peopleskillsid, isactive)VALUES(1, 2, true);
+INSERT INTO public.peopleprimaryskills (peopleid, peopleskillsid, isactive)VALUES(1, 3, true);
+INSERT INTO public.peopleprimaryskills (peopleid, peopleskillsid, isactive)VALUES(2, 1, true);
+INSERT INTO public.peopleprimaryskills (peopleid, peopleskillsid, isactive)VALUES(2, 2, true);
+INSERT INTO public.peopleprimaryskills (peopleid, peopleskillsid, isactive)VALUES(3, 1, true);
+INSERT INTO public.peopleprimaryskills (peopleid, peopleskillsid, isactive)VALUES(3, 3, true);
 
 
