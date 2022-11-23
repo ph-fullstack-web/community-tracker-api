@@ -14,9 +14,9 @@ func RegisterRoutes(app *fiber.App, db *gorm.DB) {
 	h := &handler{
 		DB: db,
 	}
-	route := app.Group("/api/peopleskills")
-	route.Post("/", middleware.AuthMiddleware, h.AddPeopleSkills)
+	route := app.Group("/api/peopleskills", middleware.AuthMiddleware)
+	route.Post("/", h.AddPeopleSkills)
 	route.Get("/", h.GetPeopleSkills)
-	route.Put("/:peopleskillsid", middleware.AuthMiddleware, h.UpdateSkill)
-	route.Delete("/:peopleskillsid", middleware.AuthMiddleware, h.DeleteSkills)
+	route.Put("/:peopleskillsid", h.UpdateSkill)
+	route.Delete("/:peopleskillsid", h.DeleteSkills)
 }
