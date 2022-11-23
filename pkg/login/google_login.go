@@ -66,9 +66,21 @@ func (h handler) GoogleLogin(ctx *fiber.Ctx) error {
 		return ctx.Status(fiber.StatusNotFound).JSON(fiber.Map{"status": fiber.StatusNotFound, "message": "Not Found"})
 	}
 
+	// check if employee is admin manager
+	cognizantID := strconv.Itoa(People.Cognizantid)
+	employeeRole := "";
+	adminManager := &models.AdminManager{}
+	if qErr := h.DB.Where(&models.AdminManager{CognizantID: cognizantID}).First(&adminManager).Error; qErr != nil {
+		employeeRole = "member";
+		log.Println(qErr.Error())
+	} else {
+		employeeRole = adminManager.RoleType;
+	}
+	
 	// create claims
 	claims := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.StandardClaims{
-		Issuer:    strconv.Itoa(People.Community.Manager.ID),
+		Id: cognizantID,
+		Issuer: employeeRole,
 		ExpiresAt: time.Now().Add(time.Hour * 24).Unix(),
 	})
 
