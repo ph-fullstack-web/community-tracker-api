@@ -72,6 +72,11 @@ func (h handler) GoogleLogin(ctx *fiber.Ctx) error {
 	adminManager := &models.AdminManager{}
 	if qErr := h.DB.Where(&models.AdminManager{CognizantID: cognizantID}).First(&adminManager).Error; qErr != nil {
 		employeeRole = "member";
+		(*adminManager).ID = 0
+		(*adminManager).CognizantID = cognizantID
+		(*adminManager).AdminName = People.Fullname
+		(*adminManager).Email = csvemail
+		(*adminManager).IsActive = People.Isactive
 		log.Println(qErr.Error())
 	} else {
 		employeeRole = adminManager.RoleType;
@@ -90,6 +95,6 @@ func (h handler) GoogleLogin(ctx *fiber.Ctx) error {
 		return ctx.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"status": fiber.StatusInternalServerError, "message": "Unable to login"})
 	}
 
-	return ctx.Status(fiber.StatusOK).JSON(fiber.Map{"message": "success", "access_token": newtoken, "data": &People})
+	return ctx.Status(fiber.StatusOK).JSON(fiber.Map{"message": "success", "access_token": newtoken, "data": adminManager})
 
 }
