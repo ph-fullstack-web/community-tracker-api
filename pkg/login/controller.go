@@ -15,4 +15,5 @@ func RegisterRoutes(app *fiber.App, db *gorm.DB) {
 	}
 	route := app.Group("/api")
 	route.Post("/login", h.Login)
+	route.Post("/googleLogin", h.GoogleLogin)
 }
