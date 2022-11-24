@@ -14,11 +14,11 @@ func RegisterRoutes(app *fiber.App, db *gorm.DB) {
 	h := &handler{
 		DB: db,
 	}
-	communityRoutes := app.Group("/api/community")
+	communityRoutes := app.Group("/api/community", middleware.AuthMiddleware)
 	communityRoutes.Get("/job-level", h.GetJobLevel)
 	communityRoutes.Get("/", h.GetCommunity)
 	communityRoutes.Get("/percentage", h.GetCommunityWithmembersPercentage)
-	communityRoutes.Post("/", middleware.AuthMiddleware, h.AddCommunity)
-	communityRoutes.Put("/:communityid", middleware.AuthMiddleware, h.UpdateCommunity)
+	communityRoutes.Post("/", h.AddCommunity)
+	communityRoutes.Put("/:communityid", h.UpdateCommunity)
 	communityRoutes.Get("/:communityid", h.GetCommunityById)
 }

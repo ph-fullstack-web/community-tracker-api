@@ -16,6 +16,9 @@ services:
       - DB_NAME=${DB_NAME}
       - DB_HOST=${DB_HOST}
       - DB_PORT=${DB_PORT}
+      - JWT_SECRET=${JWT_SECRET}
+      - ISSUER=${ISSUER}
+      - CLIENT_ID=${CLIENT_ID}
     depends_on:
       - dbpostgres
     networks:

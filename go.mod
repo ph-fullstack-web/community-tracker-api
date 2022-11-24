@@ -8,7 +8,11 @@ require (
 	gorm.io/gorm v1.23.5
 )
 
-require github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
+require (
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
+	github.com/futurenda/google-auth-id-token-verifier v0.0.0-20170311140316-2a5b89f28b7e // indirect
+	golang.org/x/oauth2 v0.2.0 // indirect
+)
 
 require (
 	github.com/andybalholm/brotli v1.0.4 // indirect
