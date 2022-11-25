@@ -21,14 +21,14 @@ type PeopleWithSkillResponseBody struct {
     PeopleCount int `gorm:"column:peoplecount" json:"people_count"`
 }
 func (h handler) GetPeopleBySkills(c *fiber.Ctx) error {
-    body := GetPeopleRequestBody{
-        Skills: "",
+    var skills = strings.TrimSpace(c.Query("skills"))
+
+	if skills == "" {
+        return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{"status": fiber.StatusBadRequest, "message": "Parameter must not be empty"})
     }
-    if err := c.BodyParser(&body); err != nil {
-        return fiber.NewError(fiber.StatusBadRequest, err.Error())
-    }
+
     var s []string
-    s = strings.Split(body.Skills, ",");
+    s = strings.Split(skills, ",");
     var t2 = make([]int, len(s))
     for idx, i := range s {
         j, err := strconv.Atoi(i)
