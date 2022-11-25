@@ -15,7 +15,7 @@ func RegisterRoutes(app *fiber.App, db *gorm.DB) {
 		DB: db,
 	}
 	peopleRoutes := app.Group("/api/people")
-	peopleRoutes.Get("/", middleware.AuthMiddleware, h.GetPeople)
+	peopleRoutes.Get("/", h.GetPeople)
 	peopleRoutes.Get("/workstate", middleware.AuthMiddleware, h.GetWorkState)
 	peopleRoutes.Get("/email/:csv_email", h.GetPeopleByCSVEmail)
 	peopleRoutes.Get("/:people_id", middleware.AuthMiddleware, h.GetPeopleById)
