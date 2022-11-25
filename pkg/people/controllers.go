@@ -18,8 +18,8 @@ func RegisterRoutes(app *fiber.App, db *gorm.DB) {
 	peopleRoutes.Get("/", h.GetPeople)
 	peopleRoutes.Get("/workstate", middleware.AuthMiddleware, h.GetWorkState)
 	peopleRoutes.Get("/email/:csv_email", h.GetPeopleByCSVEmail)
+	peopleRoutes.Get("/skills", middleware.AuthMiddleware, h.GetPeopleBySkills)
 	peopleRoutes.Get("/:people_id", middleware.AuthMiddleware, h.GetPeopleById)
 	peopleRoutes.Post("/", middleware.AuthMiddleware, h.AddPeople)
 	peopleRoutes.Put("/:peopleid", middleware.AuthMiddleware, h.UpdatePeople)
-	peopleRoutes.Post("/skills", middleware.AuthMiddleware, h.GetPeopleBySkills)
 }
