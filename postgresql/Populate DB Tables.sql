@@ -15,16 +15,16 @@ INSERT INTO public.community (communityname, communityicon, communitymgrid, comm
 INSERT INTO public.community (communityname, communityicon, communitymgrid, communitydesc, isactive) VALUES ('Android','', 0, 'Android Community',FALSE);
 
 -- INSERT INTO communityadminandmanager
-INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, passkey, roletype, isactive) VALUES ('Administrator 1','admin1@softvision.com','admin1','admin',TRUE);
-INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, passkey, roletype, isactive) VALUES ('Administrator 2','admin2@softvision.com','admin2','admin',TRUE);
-INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, passkey, roletype, isactive) VALUES ('Administrator 3','admin3@softvision.com','admin3','admin',TRUE);
-INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, passkey, roletype, isactive) VALUES ('Administrator 4','admin4@softvision.com','admin4','admin',TRUE);
-INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, passkey, roletype, isactive) VALUES ('Administrator 5','admin5@softvision.com','admin5','admin',TRUE);
-INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, passkey, roletype, isactive) VALUES ('Lloyd Joseph Miguel','lloydjoseph.miguel@softvision.com','admin6','manager',TRUE);
-INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, passkey, roletype, isactive) VALUES ('Gilberto Bernardo Morales','gilbertobernardo.morales@softvision.com','admin7','manager',TRUE);
-INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, passkey, roletype, isactive) VALUES ('Rennor Galicia','rennor.galicia@softvision.com','admin8','manager',TRUE);
-INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, passkey, roletype, isactive) VALUES ('Florante Navaja','florante.navaja@softvision.com','admin9','manager',TRUE);
-INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, passkey, roletype, isactive) VALUES ('Baron Paredes','baronpatrick.paredes@softvision.com','admin10','manager',TRUE);
+INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, cognizantid, password, roletype, isactive) VALUES ('Administrator 1','admin1@softvision.com','admin1','admin1','admin',TRUE);
+INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, cognizantid, password, roletype, isactive) VALUES ('Administrator 2','admin2@softvision.com','admin2','admin2','admin',TRUE);
+INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, cognizantid, password, roletype, isactive) VALUES ('Administrator 3','admin3@softvision.com','admin3','admin3','admin',TRUE);
+INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, cognizantid, password, roletype, isactive) VALUES ('Administrator 4','admin4@softvision.com','admin4','admin4','admin',TRUE);
+INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, cognizantid, password, roletype, isactive) VALUES ('Administrator 5','admin5@softvision.com','admin5','admin5','admin',TRUE);
+INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, cognizantid, password, roletype, isactive) VALUES ('Lloyd Joseph Miguel','lloydjoseph.miguel@softvision.com','admin6','admin6','manager',TRUE);
+INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, cognizantid, password, roletype, isactive) VALUES ('Gilberto Bernardo Morales','gilbertobernardo.morales@softvision.com','admin7','admin7','manager',TRUE);
+INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, cognizantid, password, roletype, isactive) VALUES ('Rennor Galicia','rennor.galicia@softvision.com','admin8','admin8','manager',TRUE);
+INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, cognizantid, password, roletype, isactive) VALUES ('Florante Navaja','florante.navaja@softvision.com','admin9','admin9','manager',TRUE);
+INSERT INTO public.communityadminandmanager (communityadminandmanagername, csvemail, cognizantid, password, roletype, isactive) VALUES ('Baron Paredes','baronpatrick.paredes@softvision.com','admin10','admin10','manager',TRUE);
 
 -- INSERT INTO JOBLEVEL
 INSERT INTO public.joblevel(jobleveldesc, isactive) VALUES('Community Director', TRUE);

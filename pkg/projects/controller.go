@@ -15,10 +15,10 @@ func RegisterRoutes(app *fiber.App, db *gorm.DB) {
 		DB: db,
 	}
 
-	projectRoutes := app.Group("/api/projects")
-	projectRoutes.Post("/", middleware.AuthMiddleware, h.CreateProject)
-	projectRoutes.Put("/:projectid", middleware.AuthMiddleware, h.UpdateProject)
+	projectRoutes := app.Group("/api/projects", middleware.AuthMiddleware)
+	projectRoutes.Post("/", h.CreateProject)
+	projectRoutes.Put("/:projectid", h.UpdateProject)
 	projectRoutes.Get("/", h.GetProjects)
 	projectRoutes.Get("/:projectid", h.GetProject)
-	projectRoutes.Delete("/:projectid", middleware.AuthMiddleware, h.DeleteProject)
+	projectRoutes.Delete("/:projectid", h.DeleteProject)
 }

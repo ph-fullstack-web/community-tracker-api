@@ -2,7 +2,6 @@ package login
 
 import (
 	"log"
-	"strconv"
 	"time"
 
 	"github.com/VncntDzn/community-tracker-api/config"
@@ -43,7 +42,8 @@ func (h handler) Login(ctx *fiber.Ctx) error {
 
 	// create claims
 	claims := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.StandardClaims{
-		Issuer:    strconv.Itoa(adminManager.ID),
+		Id: adminManager.CognizantID,
+		Issuer: adminManager.RoleType,
 		ExpiresAt: time.Now().Add(time.Hour * 24).Unix(),
 	})
 

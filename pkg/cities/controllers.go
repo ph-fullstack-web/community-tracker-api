@@ -14,9 +14,9 @@ func RegisterRoutes(app *fiber.App, db *gorm.DB) {
 	h := &handler{
 		DB: db,
 	}
-	citiesRoutes := app.Group("/api/cities")
+	citiesRoutes := app.Group("/api/cities", middleware.AuthMiddleware)
 	citiesRoutes.Get("/", h.GetCities)
-	citiesRoutes.Post("/", middleware.AuthMiddleware, h.AddCity)
-	citiesRoutes.Delete("/:id", middleware.AuthMiddleware, h.DeleteCity)
-	citiesRoutes.Put("/:city_id", middleware.AuthMiddleware, h.UpdateCity)
+	citiesRoutes.Post("/", h.AddCity)
+	citiesRoutes.Delete("/:id", h.DeleteCity)
+	citiesRoutes.Put("/:city_id", h.UpdateCity)
 }
