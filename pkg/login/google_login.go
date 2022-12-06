@@ -2,7 +2,6 @@ package login
 
 import (
 	"time"
-	"strconv"
 	"log"
 
 	"github.com/VncntDzn/community-tracker-api/pkg/common/models"
@@ -55,28 +54,19 @@ func (h handler) GoogleLogin(ctx *fiber.Ctx) error {
 	}
 
 	// get employee details by email
-	var People models.People
 	csvemail := claimSet.Email
 
 	if csvemail == "" {
 		return ctx.Status(fiber.StatusNotFound).JSON(fiber.Map{"status": fiber.StatusNotFound, "message": "Not Found"})
 	}
 
-	if peopleResult := h.DB.Preload("Community", "isactive = ?", true).Preload("Community.Manager").First(&People, "csvemail = ?", csvemail); peopleResult.Error != nil {
-		return ctx.Status(fiber.StatusNotFound).JSON(fiber.Map{"status": fiber.StatusNotFound, "message": "Not Found"})
-	}
-
 	// check if employee is admin manager
-	cognizantID := strconv.Itoa(People.Cognizantid)
 	employeeRole := "";
 	adminManager := &models.AdminManager{}
-	if qErr := h.DB.Where(&models.AdminManager{CognizantID: cognizantID}).First(&adminManager).Error; qErr != nil {
+	if qErr := h.DB.Where(&models.AdminManager{Email: csvemail}).First(&adminManager).Error; qErr != nil {
 		employeeRole = "member";
-		(*adminManager).ID = 0
-		(*adminManager).CognizantID = cognizantID
-		(*adminManager).AdminName = People.Fullname
+		(*adminManager).AdminName = claimSet.Name
 		(*adminManager).Email = csvemail
-		(*adminManager).IsActive = People.Isactive
 		log.Println(qErr.Error())
 	} else {
 		employeeRole = adminManager.RoleType;
@@ -84,7 +74,6 @@ func (h handler) GoogleLogin(ctx *fiber.Ctx) error {
 	
 	// create claims
 	claims := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.StandardClaims{
-		Id: cognizantID,
 		Issuer: employeeRole,
 		ExpiresAt: time.Now().Add(time.Hour * 24).Unix(),
 	})
