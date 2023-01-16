@@ -22,8 +22,8 @@ type UpdatePeopleRequestBody struct {
 	Hireddate      string `validate:"required" gorm:"column:hireddate" json:"hired_date"`
 	Communityid    int    `validate:"required" gorm:"column:communityid" json:"community_id"`
 	Workstateid    int    `validate:"required" gorm:"column:workstateid" json:"workstate_id"`
-	Joblevelid     int    `validate:"required" gorm:"column:joblevelid" json:"joblevel_id"`
-	Projectid      *int    `gorm:"column:projectid" json:"project_id"`
+	Joblevelid     int    `gorm:"column:joblevelid" json:"joblevel_id"`
+	Projectid      *int   `gorm:"column:projectid" json:"project_id"`
 	Isactive       bool   `gorm:"column:isactive" json:"is_active"`
 	Isprobationary bool   `gorm:"column:isprobationary" json:"is_probationary"`
 	Skills         string `json:"skills"`
