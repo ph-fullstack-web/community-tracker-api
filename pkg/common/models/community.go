@@ -65,3 +65,15 @@ type CommunityWithMembersPercentage struct {
 func (CommunityWithMembersPercentage) TableName() string {
 	return "community"
 }
+
+type CommunityMembersSearch struct {
+	CommunityID string `gorm:"column:communityid" json:"community_id"`
+	CommunityName string `gorm:"column:communityname" json:"community_name"`
+	CommunityManagerPeopleID string `gorm:"column:communitymgrid" json:"-"`
+	Members []PeopleUnderCommunitySearch `gorm:"foreignKey:Communityid;references:CommunityID" json:"members"`
+	Manager AdminManager `gorm:"foreignKey:ID;references:CommunityManagerPeopleID" json:"manager"`
+}
+
+func (CommunityMembersSearch) TableName() string {
+	return "community"
+}
