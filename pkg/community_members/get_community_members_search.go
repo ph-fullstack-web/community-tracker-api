@@ -2,7 +2,6 @@ package community_members
 
 import (
 	"errors"
-	"fmt"
 	"strconv"
 	"strings"
 	"github.com/VncntDzn/community-tracker-api/pkg/common/models"
@@ -11,14 +10,15 @@ import (
 )
 
 func (h handler) GetCommunityMembersSearch(c *fiber.Ctx) error {
-	var community_data models.PeopleUnderCommunitySearch
-	// var rows = strings.TrimSpace(c.Query("rows"))
+	var community_data []models.PeopleUnderCommunitySearch
+	var community_count []models.PeopleUnderCommunitySearch
+	var count int64
+
 	rows, rowsError := strconv.Atoi(strings.TrimSpace(c.Query("rows")))
 	if rowsError != nil {
 		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"status": fiber.StatusInternalServerError, "message": "Server error."})
 	}
-
-	// var page = strings.TrimSpace(c.Query("page"))
+	
 	page, pageError := strconv.Atoi(strings.TrimSpace(c.Query("page")))
 	if pageError != nil {
 		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"status": fiber.StatusInternalServerError, "message": "Server error."})
@@ -29,9 +29,8 @@ func (h handler) GetCommunityMembersSearch(c *fiber.Ctx) error {
 		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"status": fiber.StatusInternalServerError, "message": "Server error."})
 	}
 
-	fmt.Println("Rows", rows)
-	fmt.Println("Page", page)
-	result := h.DB.Order("c.communityid, p.fullname").Limit(rows).Offset((page- 1) * rows).Table("people p").Select("p.peopleid, p.fullname, p.communityid, c.communityname, c.communityid").Joins("left join community c on c.communityid = p.communityid").Where(&models.PeopleUnderCommunitySearch{Communityid: communityId})
+	h.DB.Where(&models.PeopleUnderCommunitySearch{Communityid: communityId, Isactive: true}).Find(&community_count).Count(&count)
+	result := h.DB.Limit(rows).Offset((page - 1) * rows).Where(&models.PeopleUnderCommunitySearch{Communityid: communityId, Isactive: true}).Find(&community_data)
 
 	// show 404 error if no community found
 	if errors.Is(result.Error, gorm.ErrRecordNotFound) {
@@ -43,5 +42,5 @@ func (h handler) GetCommunityMembersSearch(c *fiber.Ctx) error {
 		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"status": fiber.StatusInternalServerError, "message": "Server error."})
 	}
 
-	return c.Status(fiber.StatusOK).JSON(fiber.Map{"status": fiber.StatusOK, "message": "Success!", "data": &community_data})
+	return c.Status(fiber.StatusOK).JSON(fiber.Map{"status": fiber.StatusOK, "message": "Success!", "data": &community_data, "totalCount": &count})
 }

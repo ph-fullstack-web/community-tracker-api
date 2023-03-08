@@ -88,11 +88,10 @@ type PeopleWithSkills struct {
 type PeopleUnderCommunitySearch struct {
 	Peopleid int `gorm:"column:peopleid" json:"people_id"`
 	Fullname string `gorm:"column:fullname" json:"full_name"`
-	// Csvemail string `gorm:"column:csvemail" json:"csv_email"`
-	// Hireddate string `gorm:"column:hireddate" json:"hired_date"`
+	Csvemail string `gorm:"column:csvemail" json:"csv_email"`
+	Hireddate string `gorm:"column:hireddate" json:"hired_date"`
 	Communityid int `gorm:"column:communityid" json:"community_id"`
-	// Community Community `gorm:"foreignKey:Communityid;references:CommunityID" json:"community"`
-	// Isactive bool `gorm:"column:isactive" json:"is_active"`
+	Isactive bool `gorm:"column:isactive" json:"is_active"`
 }
 
 func (PeopleUnderCommunitySearch) TableName() string {

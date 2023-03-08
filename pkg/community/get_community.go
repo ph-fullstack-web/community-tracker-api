@@ -8,7 +8,7 @@ import (
 func (h handler) GetCommunity(c *fiber.Ctx) error {
 	var community_data []models.Community
 
-	if result := h.DB.Order("lower(communityname)").Where("isactive = ?", true).Find(&community_data); result.Error != nil {
+	if result := h.DB.Order("lower(communityname)").Where("isactive = ?", true).Preload("Manager").Find(&community_data); result.Error != nil {
 		return fiber.NewError(fiber.StatusNotFound, result.Error.Error())
 	}
 
