@@ -71,6 +71,7 @@ type CommunityMembersSearch struct {
 	CommunityName string `gorm:"column:communityname" json:"community_name"`
 	CommunityManagerPeopleID string `gorm:"column:communitymgrid" json:"-"`
 	Manager AdminManager `gorm:"foreignKey:ID;references:CommunityManagerPeopleID" json:"manager"`
+	TotalMembers int `gorm:"-" json:"total_members"`
 	Members []PeopleUnderCommunitySearch `gorm:"foreignKey:Communityid;references:CommunityID" json:"members"`
 }
 
