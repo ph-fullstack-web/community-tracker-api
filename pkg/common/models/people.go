@@ -70,19 +70,20 @@ type Manager struct {
 }
 
 type PeopleWithSkills struct {
-	Peopleid       int        				 	`json:"people_id"`
-	Cognizantid    int        				 	`json:"cognizantid_id"`
-	Fullname       string     				 	`json:"full_name"`
-	Csvemail       string     				 	`json:"csv_email"`
-	Hireddate      string     				 	`json:"hired_date"`
-	Communityid    int        				 	`json:"community_id"`
-	Workstateid    int        				 	`json:"workstate_id"`
-	Joblevelid     int        				 	`json:"joblevel_id"`
-	Projectid      int        				 	`json:"project_id"`
-	Isactive       bool       				 	`json:"is_active"`
-	Isprobationary bool       				 	`json:"is_probationary"`
+	Peopleid       int    		`gorm:"column:peopleid" json:"people_id"`
+	Cognizantid    int    		`gorm:"column:cognizantid" json:"cognizantid_id"`
+	Fullname       string 		`gorm:"column:fullname" json:"full_name"`
+	Csvemail       string 		`gorm:"column:csvemail" json:"csv_email"`
+	Hireddate      string 		`gorm:"column:hireddate" json:"hired_date"`
+	Communityid    int    		`gorm:"column:communityid" json:"community_id"`
+	Workstateid    int    		`gorm:"column:workstateid" json:"workstate_id"`
+	Joblevelid     int    		`gorm:"column:joblevelid" json:"joblevel_id"`
+	Projectid      int    		`gorm:"column:projectid" json:"project_id"`
+	Isactive       bool   		`gorm:"column:isactive" json:"is_active"`
+	Isprobationary bool   		`gorm:"column:isprobationary" json:"is_probationary"`
+	Community	   Community	`gorm:"foreignKey:Communityid;references:CommunityID" json:"community"`
 	Skill          []SkillSet 				 	`json:"skills"`
-	Details				 []PeopleDetailsDesc 	`json:"details"`
+	Details		   []PeopleDetailsDesc 	`json:"details"`
 }
 
 type PeopleUnderCommunitySearch struct {

@@ -24,7 +24,7 @@ func (h handler) GetPeopleById(c *fiber.Ctx) error {
 	}
 
 	// Get Member Info
-	if result := h.DB.Where("isactive = ?", true).First(&PeopleId, id); result.Error != nil {
+	if result := h.DB.Preload("Community", "isactive = ?", true).Preload("Community.Manager").Where("isactive = ?", true).First(&PeopleId, id); result.Error != nil {
 		return c.Status(fiber.StatusNotFound).JSON(fiber.Map{"status": fiber.StatusNotFound, "message": "Not Found"})
 	}
 
@@ -60,8 +60,9 @@ func (h handler) GetPeopleById(c *fiber.Ctx) error {
 		Projectid:      PeopleId.Projectid,
 		Isactive:       PeopleId.Isactive,
 		Isprobationary: PeopleId.Isprobationary,
+		Community:      PeopleId.Community,
 		Skill:          memberSkills,
-		Details:				detailsDescriptions,
+		Details:		detailsDescriptions,
 	}
 	return c.Status(fiber.StatusOK).JSON(fiber.Map{"status": "success", "data": responseData})
 }
